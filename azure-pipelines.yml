@@ -14,7 +14,7 @@ strategy:
       python.version: '3.12'
 
 variables:
-  GITHUB_TOKEN: $(GitHubToken)
+  - group: GitHubToken
 
 steps:
   - task: UsePythonVersion@0
